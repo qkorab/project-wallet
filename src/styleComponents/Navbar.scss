@@ -1,0 +1,100 @@
+.navbar {
+  height: 70px;
+  background-color: #ffffff;
+  padding: 0 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #4c5968;
+  text-align: center;
+}
+
+.navbar h1 {
+  font-size: 24px;
+  height: 24px;
+}
+
+.back-button {
+  width: 14px;
+  height: 23px;
+  display: flex;
+  align-items: center;
+  img {
+    width: 14px;
+    height: 22px;
+  }
+}
+
+.options-button {
+  height: 23px;
+  width: 6px;
+  display: flex;
+  align-items: center;
+  img {
+    width: 6px;
+    height: 24px;
+  }
+}
+
+.options-button button {
+  font-size: 1rem;
+  height: 30px;
+  background-color: white;
+}
+
+.modal-overlay {
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+    border-radius: 16px;
+    width: 150px;
+    color: black;
+    border-bottom: 1px solid black;
+    height: 130px;
+    justify-content: space-between;
+    background-color: white;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+  button {
+    img {
+      width: 15px;
+      height: 15px;
+    }
+    font-weight: bold;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-bottom: 2px solid black;
+  }
+  .remove-button {
+    color: red;
+  }
+}
+
+.close-button {
+  position: absolute;
+  color: black;
+  padding: 10px;
+  top: 20px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  border: none !important;
+}
+
+.modal-open {
+  overflow: hidden; /* Disable scrolling */
+  z-index: 9999;
+}

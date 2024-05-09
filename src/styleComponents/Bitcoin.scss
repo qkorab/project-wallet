@@ -1,0 +1,131 @@
+.bitcoin-price-card {
+    padding: 25px 25px 0 25px;
+    .first-card {
+        min-height: 220px;
+        border-radius: 16px;
+        filter: drop-shadow(0px 59px 55.5px rgba(154,155,176,0.17));
+        background-color: #ffffff;
+        .first-card-container {
+            padding: 25px;
+            .coin-logo-name{
+                display: flex;
+                justify-content: space-between;
+                .logo-and-title{
+                    display: flex;
+                }
+                .logo-coin{
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 22px;
+                    background-image: linear-gradient(0deg, #ff8f17 0%, #ffc743 100%);
+                    img {
+                        width: 16px;
+                        height: 25px;
+                    }
+                }
+                .coin-name {
+                    font-size: 15px;
+                    color: #4c5968;
+                    font-weight: bold;
+                    display: flex;
+                    align-items: center;
+                    padding-left: 22px;    
+                }
+                .coin-name-short {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    font-size: 15px;
+                    color: #aeb8c4;
+                    font-weight: bold;
+                }
+             }
+            .coin-price{
+                color: #4c5968;
+                font-weight: bold;
+                display: flex;
+                justify-content: flex-start;
+            }
+            .usd{
+                display: flex;
+                justify-content: space-between;
+                .invest {
+                    color: #aeb8c4;
+                    display: flex;
+                    align-items: center;
+                }
+                .decrease-percentage {
+                    padding: 2px 8px; 
+                    font-size: 14px;
+                    color: #ffffff;
+                    border-radius: 51px;
+                    background-color: #ee225d;
+                }
+            }
+            .toggle-button {
+                background-color: white;
+            }
+            .extra-buttons{
+                display: flex;
+                .buy-sell-card {
+                    max-width: 165px;
+                    max-height: 118px;
+                    .trade {
+                        padding: 16px;
+                        .sell-btc, .buy-btc {
+                            img {
+                                width: 10px;
+                            }
+                        }
+                    }
+                } 
+            }
+            .flex-container-toggled {
+                    padding: 12px;
+                    display: flex;
+                    justify-content: center;
+                      .buy-sell-card {
+                        width: 120px;
+                        height: 110px;
+                        border-radius: 16px;
+                        filter: drop-shadow(0px 59px 55.5px rgba(154,155,176,0.17));
+                        background-color: #ffffff;
+                    }
+                  
+                    .buy-btc {
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      align-self: center;
+                      color: white; /* Set ICON instead of color */
+                      width: 45px;
+                      height: 45px;
+                      border-radius: 22px;
+                      background-image: linear-gradient(0deg, #1d71f1 0%, #17c7fb 100%);
+                    }
+                  
+                    .sell-btc {
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      align-self: center;
+                      color: white; /* Set ICON instead of color */
+                      width: 45px;
+                      height: 45px;
+                      border-radius: 22px;
+                      background-image: linear-gradient(0deg, #fa23a2 0%, #ff677c 100%);
+                    }
+                  
+                    .container {
+                      font-size: 15px;
+                    }
+                  
+                    .trade {
+                      padding: 12px;
+                      display: flex;
+                      flex-direction: column;
+                    }
+            }
+        }
+    }
+}
